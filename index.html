@@ -4,33 +4,70 @@
   <title>VASTRA Shop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: Arial; text-align: center; padding: 20px; }
-    .product { margin: 10px; padding: 10px; border: 1px solid #ccc; }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    .product {
+      display: inline-block;
+      width: 250px;
+      margin: 15px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
   </style>
 </head>
 <body>
   <h1>🛍️ VASTRA Shop</h1>
-  <p>Welcome to our fashion store!</p>
+  <p>Welcome to our fashion store! Browse our latest collection.</p>
 
   <!-- Product 1 -->
   <div class="product">
+    <img src="https://via.placeholder.com/200x200?text=Summer+Dress" alt="Summer Dress">
     <h3>Summer Dress</h3>
     <p>₹999</p>
-    <button onclick="alert('Added to cart!')">Buy Now</button>
+    <button onclick="alert('Added Summer Dress to cart!')">Buy Now</button>
   </div>
 
   <!-- Product 2 -->
   <div class="product">
+    <img src="https://via.placeholder.com/200x200?text=Cotton+T-Shirt" alt="Cotton T-Shirt">
     <h3>Cotton T-Shirt</h3>
     <p>₹499</p>
-    <button onclick="alert('Added to cart!')">Buy Now</button>
+    <button onclick="alert('Added Cotton T-Shirt to cart!')">Buy Now</button>
   </div>
 
   <!-- Product 3 -->
   <div class="product">
+    <img src="https://via.placeholder.com/200x200?text=Jeans" alt="Jeans">
     <h3>Jeans</h3>
     <p>₹1499</p>
-    <button onclick="alert('Added to cart!')">Buy Now</button>
+    <button onclick="alert('Added Jeans to cart!')">Buy Now</button>
   </div>
 </body>
 </html>
